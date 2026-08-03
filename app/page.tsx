@@ -15,7 +15,17 @@ export default function Portfolio() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
-        <motion.div initial="hidden" animate="visible" variants={fadeIn} className="z-10">
+        <motion.div initial="hidden" animate="visible" variants={fadeIn} className="z-10 flex flex-col items-center">
+          
+          {/* مكان الصورة الشخصية (الجديد) */}
+          <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-blue-500/40 shadow-2xl mb-6 bg-gray-900">
+            <img 
+              src="/sadek.png" 
+              alt="Mohamed Seddik" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/30 text-blue-400 text-sm font-medium mb-6 border border-blue-800/50">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -30,14 +40,14 @@ export default function Portfolio() {
             Senior Pharmacist & Healthcare Manager
           </p>
           <p className="max-w-2xl text-gray-400 text-lg mx-auto mb-10 leading-relaxed">
-            Highly experienced pharmacy professional with over 25 years of expertise in pharmacy operations, preventive medicine, cold chain management, and clinical pharmacy.
+            Highly experienced pharmacy professional with over 21 years of expertise in pharmacy operations, preventive medicine, cold chain management, and clinical pharmacy.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#contact" className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
               Contact Me
             </a>
-            <a href="/cv.pdf" download="Mohammed_Sadek_CV.pdf" className="px-8 py-3 rounded-full bg-gray-800 text-white font-medium hover:bg-gray-700 border border-gray-700 transition-colors flex items-center justify-center gap-2">
+            <a href="/cv.pdf" download="Mohamed_Seddik_CV.pdf" className="px-8 py-3 rounded-full bg-gray-800 text-white font-medium hover:bg-gray-700 border border-gray-700 transition-colors flex items-center justify-center gap-2">
               <Download size={18} />
               Download CV
             </a>
@@ -226,7 +236,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-gray-500 text-sm border-t border-gray-800 mt-12">
-        <p>© {new Date().getFullYear()} Mohammed Sadek. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Mohamed Seddik. All rights reserved.</p>
       </footer>
     </div>
   );
