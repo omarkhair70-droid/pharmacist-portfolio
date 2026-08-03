@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, MapPin, Phone, Mail, Award, CheckCircle2, Download } from "lucide-react";
+import { Briefcase, GraduationCap, MapPin, Phone, Mail, Award, CheckCircle2, Download, MessageSquare } from "lucide-react";
 
 export default function Portfolio() {
   const fadeIn = {
@@ -37,10 +37,11 @@ export default function Portfolio() {
             <a href="#contact" className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
               Contact Me
             </a>
-            <button className="px-8 py-3 rounded-full bg-gray-800 text-white font-medium hover:bg-gray-700 border border-gray-700 transition-colors flex items-center justify-center gap-2">
+            {/* زر تحميل الـ CV */}
+            <a href="/cv.pdf" download="Mohammed_Sadek_CV.pdf" className="px-8 py-3 rounded-full bg-gray-800 text-white font-medium hover:bg-gray-700 border border-gray-700 transition-colors flex items-center justify-center gap-2">
               <Download size={18} />
               Download CV
-            </button>
+            </a>
           </div>
         </motion.div>
       </section>
@@ -186,14 +187,15 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 px-6 lg:px-8 max-w-4xl mx-auto text-center" id="contact">
+      <section className="py-24 px-6 lg:px-8 max-w-5xl mx-auto text-center" id="contact">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">Get In Touch</h2>
           <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
             Currently open for new opportunities in pharmacy management, clinical roles, and healthcare consultancy. Let's connect.
           </p>
 
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Phone */}
             <a href="tel:+201032725374" className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
                 <Phone size={24} />
@@ -202,14 +204,25 @@ export default function Portfolio() {
               <p className="text-gray-400 text-sm">+20 10 32725374</p>
             </a>
             
+            {/* WhatsApp */}
+            <a href="https://wa.me/201032725374" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
+                <MessageSquare size={24} />
+              </div>
+              <h4 className="text-white font-bold mb-1">WhatsApp</h4>
+              <p className="text-gray-400 text-sm">+20 10 32725374</p>
+            </a>
+
+            {/* Email */}
             <a href="mailto:mseddiq404@gmail.com" className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
-                <Mail size={24} />
+                <Mail size=size={24} />
               </div>
               <h4 className="text-white font-bold mb-1">Email</h4>
               <p className="text-gray-400 text-sm">mseddiq404@gmail.com</p>
             </a>
 
+            {/* Location */}
             <div className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
                 <MapPin size={24} />
