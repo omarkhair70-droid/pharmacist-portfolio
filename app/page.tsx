@@ -50,7 +50,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: "25+", label: "Years Experience" },
+              { number: "21+", label: "Years Experience" },
               { number: "16", label: "Years Community Pharmacy" },
               { number: "10", label: "Years Pharmacy Management" },
               { number: "9", label: "Years Ministry of Health" }
