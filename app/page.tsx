@@ -37,7 +37,6 @@ export default function Portfolio() {
             <a href="#contact" className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
               Contact Me
             </a>
-            {/* زر تحميل الـ CV */}
             <a href="/cv.pdf" download="Mohammed_Sadek_CV.pdf" className="px-8 py-3 rounded-full bg-gray-800 text-white font-medium hover:bg-gray-700 border border-gray-700 transition-colors flex items-center justify-center gap-2">
               <Download size={18} />
               Download CV
@@ -75,7 +74,6 @@ export default function Portfolio() {
 
           <div className="space-y-12 border-l-2 border-gray-800 ml-4 pl-8 relative">
             
-            {/* Exp 1 */}
             <div className="relative">
               <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-[41px] top-1 border-4 border-gray-950"></div>
               <h3 className="text-xl font-bold text-white">Community Pharmacies</h3>
@@ -87,7 +85,6 @@ export default function Portfolio() {
               </p>
             </div>
 
-            {/* Exp 2 */}
             <div className="relative">
               <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-[41px] top-1 border-4 border-gray-950"></div>
               <h3 className="text-xl font-bold text-white">Preventive Department - Ministry of Health</h3>
@@ -97,7 +94,6 @@ export default function Portfolio() {
               </p>
             </div>
 
-            {/* Exp 3 */}
             <div className="relative">
               <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-[41px] top-1 border-4 border-gray-950"></div>
               <h3 className="text-xl font-bold text-white">Pharmacy Owner & Manager</h3>
@@ -107,7 +103,6 @@ export default function Portfolio() {
               </p>
             </div>
 
-            {/* Exp 4 */}
             <div className="relative">
               <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-[41px] top-1 border-4 border-gray-950"></div>
               <h3 className="text-xl font-bold text-white">Economic Pharmacy</h3>
@@ -150,7 +145,6 @@ export default function Portfolio() {
             </ul>
           </motion.div>
 
-          {/* Skills & Languages */}
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
             <div className="flex items-center gap-3 mb-10">
               <Award className="text-blue-500" size={32} />
@@ -195,7 +189,6 @@ export default function Portfolio() {
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Phone */}
             <a href="tel:+201032725374" className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
                 <Phone size={24} />
@@ -204,7 +197,6 @@ export default function Portfolio() {
               <p className="text-gray-400 text-sm">+20 10 32725374</p>
             </a>
             
-            {/* WhatsApp */}
             <a href="https://wa.me/201032725374" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
                 <MessageSquare size={24} />
@@ -213,16 +205,14 @@ export default function Portfolio() {
               <p className="text-gray-400 text-sm">+20 10 32725374</p>
             </a>
 
-            {/* Email */}
             <a href="mailto:mseddiq404@gmail.com" className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
-                <Mail size=size={24} />
+                <Mail size={24} />
               </div>
               <h4 className="text-white font-bold mb-1">Email</h4>
               <p className="text-gray-400 text-sm">mseddiq404@gmail.com</p>
             </a>
 
-            {/* Location */}
             <div className="flex flex-col items-center p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
                 <MapPin size={24} />
