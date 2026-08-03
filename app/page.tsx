@@ -24,7 +24,7 @@ export default function Portfolio() {
             Available for New Opportunities
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Mohammed Sadek
+            Mohamed Seddik
           </h1>
           <p className="text-xl md:text-3xl font-medium text-blue-400 mb-6">
             Senior Pharmacist & Healthcare Manager
